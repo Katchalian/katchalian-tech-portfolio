@@ -66,3 +66,53 @@ contactMeBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+const contactForm = document.querySelector(".contact-form");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const submitBtn = contactForm.querySelector(".message-btn");
+        const originalText = submitBtn.textContent;
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = "Sending...";
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: "POST",
+                body: new FormData(contactForm),
+                headers: {
+                    "Accept": "application/json"
+                }
+            });
+
+            if (response.ok) {
+                contactForm.reset();
+                submitBtn.textContent = "Message Sent ✓";
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2500);
+
+            } else {
+                submitBtn.textContent = "Failed to Send";
+
+                setTimeout(() => {
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                }, 2500);
+            }
+
+        } catch (error) {
+            submitBtn.textContent = "Failed to Send";
+
+            setTimeout(() => {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2500);
+        }
+    });
+}
