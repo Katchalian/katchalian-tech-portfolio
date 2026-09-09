@@ -58,13 +58,14 @@ viewProjectsBtn.addEventListener("click", () => {
     });
 });
 
-const letsConnectBtn = document.querySelector("#lets-connect");
-const contactMeBtn = document.querySelector("#contact-me");
+const contactButtons = document.querySelectorAll("#contact-me, #let-connect");
 const contactSection = document.querySelector("#contact");
 
-contactMeBtn.addEventListener("click", () => {
-    contactSection.scrollIntoView({
-        behavior: "smooth"
+contactButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        contactSection.scrollIntoView({
+            behavior: "smooth"
+        });
     });
 });
 
