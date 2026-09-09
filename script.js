@@ -1,5 +1,3 @@
-console.log("SCRIPT.JS IS LOADED");
-
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 const scrollTopBtn = document.querySelector(".scroll-top");
@@ -60,6 +58,7 @@ viewProjectsBtn.addEventListener("click", () => {
     });
 });
 
+const letsConnectBtn = document.querySelector("#lets-connect");
 const contactMeBtn = document.querySelector("#contact-me");
 const contactSection = document.querySelector("#contact");
 
@@ -74,8 +73,6 @@ const contactForm = document.querySelector(".contact-form");
 if (contactForm) {
     contactForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-
-        console.log("FORM SUBMIT EVENT FIRED");
 
         const submitBtn = contactForm.querySelector(".message-btn");
         const originalText = submitBtn.textContent;
