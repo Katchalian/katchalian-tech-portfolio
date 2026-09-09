@@ -67,7 +67,7 @@ contactMeBtn.addEventListener("click", () => {
     });
 });
 
-const letsConnectBtn = document.querySelector("#lets-connect-btn");
+const letsConnectBtn = document.querySelector("#lets-connect");
 const contactSection = document.querySelector("#contact");
 
 letsConnectBtn.addEventListener("click", () => {
