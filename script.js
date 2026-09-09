@@ -66,12 +66,3 @@ contactMeBtn.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
-
-const letsConnectBtn = document.querySelector("#lets-connect");
-const contactSection = document.querySelector("#contact");
-
-letsConnectBtn.addEventListener("click", () => {
-    contactSection.scrollIntoView({
-        behavior: "smooth"
-    });
-});
