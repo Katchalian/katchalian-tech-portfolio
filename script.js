@@ -1,3 +1,5 @@
+console.log("SCRIPT.JS IS LOADED");
+
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 const scrollTopBtn = document.querySelector(".scroll-top");
