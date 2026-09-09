@@ -75,6 +75,8 @@ if (contactForm) {
     contactForm.addEventListener("submit", async (e) => {
         e.preventDefault();
 
+        console.log("FORM SUBMIT EVENT FIRED");
+
         const submitBtn = contactForm.querySelector(".message-btn");
         const originalText = submitBtn.textContent;
 
