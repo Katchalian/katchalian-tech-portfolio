@@ -1337,6 +1337,9 @@ html {
   .hero p {
     font-size: 1.1rem;
   }
+  .about-card {
+    justify-content: center;
+  }
 
   .about-image img {
     width: 120px;
@@ -1655,6 +1658,7 @@ html {
   .about-card {
     padding: 20px;
     border-radius: 18px;
+    margin-top: 0;
   }
 
   .about-image img {
