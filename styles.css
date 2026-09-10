@@ -131,7 +131,6 @@ nav button:active {
 }
 
 .menu-btn {
-  position: fixed;
   display: block;
   background: transparent;
   color: white;
@@ -143,7 +142,6 @@ nav button:active {
 }
 
 .theme-btn {
-  position: fixed;
   display: flex;
   align-items: center;
   justify-content: center;
