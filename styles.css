@@ -1558,6 +1558,10 @@ html {
     position: relative;
   }
 
+  nav ul {
+    display: none;
+  }
+
   nav img {
     width: 75px;
     height: auto;
@@ -1575,19 +1579,9 @@ html {
   /* MOBILE NAV MENU */
   nav ul.active {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 55px;
-    right: 0;
-    width: 180px;
-    padding: 18px;
+    flex-direction: row;
+    align-items: center;
     gap: 16px;
-    background: rgba(11, 17, 32, .97);
-    border: 1px solid rgba(59, 130, 246, .25);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
-    z-index: 1001;
-    box-sizing: border-box;
   }
 
   nav ul.active li {
@@ -1599,6 +1593,10 @@ html {
     display: block;
     font-size: 14px;
     padding: 5px;
+  }
+
+  .menu-btn {
+    display: block;
   }
 
   /* HERO */
@@ -1681,7 +1679,7 @@ html {
   }
 
   .about p {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 
   .about-card {
@@ -1775,7 +1773,7 @@ html {
 
   .project-card {
     width: 100%;
-    margin-top: 0;
+    margin-top: 10px;
   }
 
   .project-content {
