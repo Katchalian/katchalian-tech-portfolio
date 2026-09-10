@@ -150,7 +150,7 @@ nav button:active {
 }
 
 .hero-text {
-  width: 100%;
+  width: 55%;
 }
 
 .greeting {
@@ -1707,7 +1707,7 @@ html {
 
   .hero-buttons {
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     gap: 8px;
