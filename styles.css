@@ -1540,13 +1540,45 @@ html {
   }
 
   nav img {
-    max-width: 110px;
+    max-width: 100px;
     height: auto;
   }
 
   .menu-btn {
     font-size: 18px;
     padding: 6px 10px;
+  }
+
+    /* MOBILE NAV MENU */
+  nav {
+    position: relative;
+  }
+
+  nav ul.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 180px;
+    padding: 20px;
+    gap: 18px;
+    background: rgba(11, 17, 32, .97);
+    border: 1px solid rgba(59, 130, 246, .25);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+    z-index: 1001;
+  }
+
+  nav ul.active li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul.active li a {
+    display: block;
+    font-size: 14px;
+    padding: 5px;
   }
 
   /* HERO */
