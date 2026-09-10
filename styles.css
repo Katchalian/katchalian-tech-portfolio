@@ -1540,24 +1540,32 @@ html {
 
   /* NAVBAR */
   header {
-    padding: 20px 5%;
+    padding: 15px 4%;
     width: 100%;
     box-sizing: border-box;
   }
 
   nav {
-    position: relative;
     width: 100%;
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
   }
 
   nav img {
-    max-width: 100px;
+    width: 85px;
     height: auto;
+    margin-right: 0;
   }
 
   .menu-btn {
+    display: block;
     font-size: 18px;
-    padding: 6px 10px;
+    margin: 0;
+    padding: 6px 8px;
+    flex-shrink: 0;
   }
 
   /* MOBILE NAV MENU */
@@ -1565,12 +1573,11 @@ html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 65px;
+    top: 55px;
     right: 0;
     width: 180px;
-    max-width: calc(100vw - 10%);
-    padding: 20px;
-    gap: 18px;
+    padding: 18px;
+    gap: 16px;
     background: rgba(11, 17, 32, .97);
     border: 1px solid rgba(59, 130, 246, .25);
     border-radius: 15px;
@@ -1611,17 +1618,17 @@ html {
     line-height: 1.7;
   }
 
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
   .hero-buttons {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-  }
-
-  .hero-content {
-    width: 100%;
-    text-align: center;
   }
 
   .hero-buttons a, .hero-buttons button {
