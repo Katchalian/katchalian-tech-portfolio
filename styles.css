@@ -1585,6 +1585,8 @@ html {
   .hero {
     padding-top: 110px;
     padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
   }
 
   .hero h1 {
