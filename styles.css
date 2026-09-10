@@ -1486,7 +1486,7 @@ html {
   }
 
   nav ul.active li a {
-    font-size: 8px;
+    font-size: 13px;
   }
 
   .menu-btn {
@@ -1688,6 +1688,7 @@ html {
   .hero-text {
     width: 100%;
     text-align: center;
+    justify-content: center;
   }
 
   .hero h1 {
