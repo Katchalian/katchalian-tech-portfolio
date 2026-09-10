@@ -1606,13 +1606,13 @@ html {
     line-height: 1.7;
   }
 
-.hero-buttons {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+  .hero-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 
   .primary-btn,
   .secondary-btn {
