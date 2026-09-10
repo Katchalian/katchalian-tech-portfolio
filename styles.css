@@ -1222,154 +1222,78 @@ html {
 }
 
 @media (max-width: 768px){
-  section {
-    padding-left: 4%;
-    padding-right: 4%;
+  .hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
   }
 
-  nav {
+  .hero-text {
     width: 100%;
-    box-sizing: border-box;
   }
 
-  nav ul {
-    gap: 25px;
-    display: none;
-  }
-
-  nav ul li a {
-    font-size: 12px;
-  }
-
-  nav img {
-    margin-left: -10px;
-  }
-
-  .nav-connect-btn {
-    display: none;
-    padding: 8px 16px;
-    margin-left: 5px;
-  }
-
-  .menu-btn {
-    display: block;
-    margin-left: auto;
-    flex-shrink: 0;
-  }
-
-  .hero h1 {
-    font-size: 1.8rem;
-  }
-
-  .hero h2 {
-    font-size: 1.3rem;
-  }
-
-  .heor p {
-    font-size: .35rem;
-  }
-
-  .hero-image img {
-    width: 130px;
-    height: 130px;
+  .hero p {
+    text-align: center;
   }
 
   .hero-buttons {
-    width: max-content;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .hero-image::before {
-    width: 210px;
-    height: 210px;
+  .hero-image {
+    width: 100%;
   }
 
-  .orbit {
-  width: 310px;
-  height: 310px;
-}
-
-  .orbit::before {
-    width: 170px;
-    height: 170px;
-  }
-
-  .orbit::after {
-    width: 230px;
-    height: 230px;
-  }
-
-  .orbit-track {
-    width: 280px;
-    height: 280px;
-  }
-
-  .about {
-    gap: 2rem;
-  }
-
-  .about-image img {
-    width: 120px;
-  }
-
-  .about-heading h2 {
-    font-size: 2rem;
-  }
-
-  .about-heading h3 {
-    font-size: 1rem;
-  }
-
-  .about-tags {
-    gap: 6px;
+  .about-card {
+    padding: 25px;
   }
 
   .about-top {
-    gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-  .about-tags span {
-    font-size: .5rem;
-    padding: 5px 8px;
-    font-weight: 300;
+  .about-heading {
+    width: 100%;
   }
 
   .about-content p {
-    font-size: .95rem;
+    text-align: center;
   }
 
   .about-content ul {
-    font-size: .45rem;
-    font-weight: 300;
-    gap: 3px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .projects-container {
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
 
-  .message-btn {
-    max-width: max-content;
-    font-size: 12px;
+  .project-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .contact-container {
+    width: 100%;
   }
 
   .contact-form {
-    max-width: 80%;
-  }
-
-  .menu-btn {
-  display: block;
-}
-
-  nav ul {
-    display: none;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .nav-connect-btn {
-    display: none;
+    max-width: 100%;
+    padding: 25px;
   }
 }
 
@@ -1413,60 +1337,22 @@ html {
     font-size: 1.1rem;
   }
 
-  .hero-image img {
-    max-width: 110px;
-    max-height: 110px;
-  }
-
-  .hero-buttons {
-    max-width: max-content;
-    padding: auto;
-  }
-
-  .hero-image::before {
-    max-width: 190px;
-    max-width: 190px;
-  }
-
-  .orbit {
-  max-width: 290px;
-  max-height: 290px;
-}
-
-  .orbit::before {
-    max-width: 150px;
-    max-height: 150px;
-  }
-
-  .orbit::after {
-    width: 210px;
-    height: 210px;
-  }
-
-  .orbit-track {
-    max-width: 260px;
-    max-height: 260px;
-  }
-
-  .about {
-    gap: 1.8rem;
-  }
-
   .about-image img {
-    width: 20px;
+    width: 120px;
     border-radius: 12px;
   }
 
   .about-heading h2 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .about-heading h3 {
-    font-size: .8rem;
+    font-size: 1rem;
   }
 
   .about-tags {
-    gap: 3px;
+    gap: 6px;
+    justify-content: center;
   }
 
   .about-top {
@@ -1474,19 +1360,19 @@ html {
   }
 
   .about-tags span {
-    font-size: .3rem;
-    padding: 3px 5px;
-    font-weight: 100;
+    font-size: .75rem;
+    padding: 6px 10px;
+    font-weight: 400;
   }
 
   .about-content p {
-    font-size: .8rem;
+    font-size: .9rem;
   }
 
   .about-content ul {
-    font-size: .3rem;
-    font-weight: 200;
-    gap: 2.5px;
+    font-size: .7rem;
+    font-weight: 400;
+    gap: 6px;
   }
 
   .projects-container {
@@ -1500,6 +1386,10 @@ html {
 
   .contact-info p {
     font-size: .8rem;
+  }
+
+  .parent-background {
+    padding: 20px 10px;
   }
 }
 
@@ -1583,20 +1473,21 @@ html {
   }
 
   .about-image img {
-    width: 18px;
+    width: 110px;
     border-radius: 10px;
   }
 
   .about-heading h2 {
-    font-size: .85rem;
+    font-size: 1.8rem;
   }
 
   .about-heading h3 {
-    font-size: .6rem;
+    font-size: .95rem;
   }
 
   .about-tags {
-    gap: 2px;
+    gap: 5px;
+    justify-content: center;
   }
 
   .about-top {
@@ -1604,19 +1495,20 @@ html {
   }
 
   .about-tags span {
-    font-size: .2rem;
-    padding: 2px 3px;
-    font-weight: 100;
+    font-size: .7rem;
+    padding: 6px 9px;
+    font-weight: 400;
   }
 
   .about-content p {
-    font-size: .6rem;
+    font-size: .85rem;
   }
 
   .about-content ul {
-    font-size: .25rem;
-    font-weight: 200;
-    gap: 2px;
+    font-size: .65rem;
+    font-weight: 400;
+    gap: 5px;
+    justify-content: center;
   }
 
   .projects-container {
