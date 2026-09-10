@@ -1600,11 +1600,13 @@ html {
     line-height: 1.7;
   }
 
-  .hero-buttons {
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-  }
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
   .primary-btn,
   .secondary-btn {
@@ -1780,7 +1782,7 @@ html {
   }
 
   .contact-item {
-    font-size: .85rem;
+    font-size: .75rem;
     line-height: 1.8;
   }
 
