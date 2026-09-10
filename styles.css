@@ -1602,6 +1602,8 @@ html {
 
   .hero-buttons {
     gap: 10px;
+    align-items: center;
+    justify-content: center;
   }
 
   .primary-btn,
@@ -1775,6 +1777,11 @@ html {
   .contact-info p {
     font-size: .75rem;
     line-height: 1.6;
+  }
+
+  .contact-item {
+    font-size: .85rem;
+    line-height: 1.8;
   }
 
   .contact-form {
