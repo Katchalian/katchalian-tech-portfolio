@@ -382,6 +382,7 @@ html {
   overflow: hidden;
   max-width: 1000px;
   margin: 60px auto 0;
+  margin-top: 10px;
   padding: 50px;
   background: rgba(255, 255, 255, .05);
   border: 1px solid rgba(59, 130, 246, .20);
