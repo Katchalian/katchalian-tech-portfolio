@@ -1304,26 +1304,92 @@ html {
     padding-right: 3%;
   }
 
+  /* NAVBAR */
+  header {
+    padding: 18px 5%;
+  }
+
   nav {
     width: 100%;
-  }
-
-  nav ul {
-    gap: 20px;
-  }
-
-  nav ul li a {
-    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
   }
 
   nav img {
-    max-width: 150px;
+    width: 90px;
+    height: auto;
+    margin-right: 0;
   }
 
+  /* Hide Let's Connect */
   .nav-connect-btn {
-    font-size: 8px;
-    padding: 7px 14px;
-    margin-left: 5px;
+    display: none;
+  }
+
+  /* Hide links until menu button is clicked */
+  nav ul {
+    display: none;
+  }
+
+  /* Show links when menu is clicked */
+  nav ul.active {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    position: static;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  nav ul.active li {
+    width: auto;
+  }
+
+  nav ul.active li a {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .menu-btn {
+    display: block;
+    margin: 0;
+    padding: 6px 8px;
+    font-size: 18px;
+    flex-shrink: 0;
+  }
+
+
+  /* HERO */
+  .hero {
+    padding: 110px 5% 50px;
+    text-align: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    padding: 12px 18px;
+    font-size: 13px;
   }
 
   .hero h1 {
@@ -1408,7 +1474,7 @@ html {
   }
 
   nav ul {
-    gap: 15px;
+    gap: 10px;
   }
 
   nav ul li a {
@@ -1416,13 +1482,11 @@ html {
   }
 
   nav img {
-    max-width: 130px;
+    max-width: 75px;
   }
 
   .nav-connect-btn {
-    font-size: 6px;
-    padding: 5px 10px;
-    margin-left: 5px;
+    display: none;
   }
 
   .hero h1 {
@@ -1538,73 +1602,59 @@ html {
     padding-right: 4%;
   }
 
-  .nav-connect-btn {
-    display: none;
-  }
-
   /* NAVBAR */
   header {
     padding: 15px 4%;
-    width: 100%;
-    box-sizing: border-box;
   }
 
   nav {
     width: 100%;
-    min-height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-  }
-
-  nav ul {
-    display: none;
   }
 
   nav img {
-    width: 75px;
-    height: auto;
-    margin-right: 0;
+    width: 80px;
   }
 
   .menu-btn {
-    display: block;
-    font-size: 18px;
-    margin: 0;
-    padding: 6px 8px;
-    flex-shrink: 0;
+    font-size: 17px;
+    padding: 5px 7px;
   }
 
-  /* MOBILE NAV MENU */
+  /* OPEN NAV LINKS */
   nav ul.active {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 16px;
+    gap: 10px;
+    position: static;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
   }
 
   nav ul.active li {
-    width: 100%;
-    text-align: center;
+    width: auto;
   }
 
   nav ul.active li a {
-    display: block;
-    font-size: 8px;
+    font-size: 11px;
     padding: 0;
   }
 
-  .menu-btn {
-    display: block;
-  }
 
   /* HERO */
   .hero {
     padding-top: 110px;
     padding-bottom: 50px;
-    align-items: center;
-    justify-content: center;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
   }
 
   .hero h1 {
@@ -1618,10 +1668,6 @@ html {
   .hero p {
     font-size: .85rem;
     line-height: 1.7;
-  }
-
-  .hero-text {
-    width: 100%;
     text-align: center;
   }
 
@@ -1630,17 +1676,13 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
-  }
-
-  .hero-buttons a, .hero-buttons button {
-    flex-shrink: 0;
+    gap: 8px;
   }
 
   .primary-btn,
   .secondary-btn {
-    padding: 12px 18px;
-    font-size: 13px;
+    padding: 11px 14px;
+    font-size: 12px;
   }
 
   .hero-image img {
@@ -1673,19 +1715,15 @@ html {
     height: 210px;
   }
 
+
   /* ABOUT */
   .about {
     padding-top: 70px;
   }
 
-  .about p {
-    margin-bottom: 10px;
-  }
-
   .about-card {
     padding: 20px;
     border-radius: 18px;
-    margin-top: 0;
   }
 
   .about-image img {
@@ -1729,6 +1767,7 @@ html {
     font-size: 12px;
   }
 
+
   /* SKILLS */
   .skills {
     padding-top: 70px;
@@ -1740,7 +1779,6 @@ html {
 
   .section-title p {
     font-size: .85rem;
-    margin-bottom: 0;
   }
 
   .skill-card {
@@ -1760,6 +1798,7 @@ html {
     height: 8px;
   }
 
+
   /* PROJECTS */
   .projects {
     padding-top: 70px;
@@ -1768,12 +1807,10 @@ html {
   .projects-intro {
     font-size: .8rem;
     margin-bottom: 5px;
-    margin-top: 0;
   }
 
   .project-card {
     width: 100%;
-    margin-top: 10px;
   }
 
   .project-content {
@@ -1804,6 +1841,7 @@ html {
     font-size: 15px;
   }
 
+
   /* CONTACT */
   .contact {
     padding-top: 70px;
@@ -1819,8 +1857,8 @@ html {
   }
 
   .contact-item {
-    font-size: .75rem;
-    line-height: 1.8;
+    font-size: .7rem;
+    line-height: 1.6;
   }
 
   .contact-form {
@@ -1831,6 +1869,7 @@ html {
   .message-btn {
     font-size: 11px;
   }
+
 
   /* FOOTER */
   .footer {
@@ -1857,6 +1896,7 @@ html {
   .footer-bottom p {
     font-size: .7rem;
   }
+
 
   /* BACK TO TOP */
   .scroll-top {
