@@ -1453,9 +1453,9 @@ html {
   }
 
   .orbit {
-  max-width: 250px;
-  max-height: 250px;
-}
+    max-width: 250px;
+    max-height: 250px;
+  }
 
   .orbit::before {
     max-width: 130px;
@@ -1541,6 +1541,13 @@ html {
   /* NAVBAR */
   header {
     padding: 20px 5%;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav {
+    position: relative;
+    width: 100%;
   }
 
   nav img {
@@ -1553,11 +1560,7 @@ html {
     padding: 6px 10px;
   }
 
-    /* MOBILE NAV MENU */
-  nav {
-    position: relative;
-  }
-
+  /* MOBILE NAV MENU */
   nav ul.active {
     display: flex;
     flex-direction: column;
@@ -1565,6 +1568,7 @@ html {
     top: 65px;
     right: 0;
     width: 180px;
+    max-width: calc(100vw - 10%);
     padding: 20px;
     gap: 18px;
     background: rgba(11, 17, 32, .97);
@@ -1572,6 +1576,7 @@ html {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
     z-index: 1001;
+    box-sizing: border-box;
   }
 
   nav ul.active li {
@@ -1607,11 +1612,15 @@ html {
   }
 
   .hero-buttons {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-buttons a, .hero-buttons button {
+    flex-shrink: 0;
   }
 
   .primary-btn,
