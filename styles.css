@@ -1372,11 +1372,18 @@ html {
 
   /* HERO */
   .hero {
-    padding: 110px 5% 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-text {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -1386,6 +1393,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin: 0 auto;
   }
 
   .primary-btn,
@@ -1498,12 +1506,18 @@ html {
 
   /* HERO */
   .hero {
-    padding-left: 4%;
-    padding-right: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .hero-text {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
@@ -1513,6 +1527,7 @@ html {
     justify-content: center;
     align-items: center;
     gap: 8px;
+    margin: 0 auto;
   }
 
   .primary-btn,
