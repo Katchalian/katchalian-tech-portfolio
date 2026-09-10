@@ -1619,6 +1619,11 @@ html {
     gap: 10px;
   }
 
+  .hero-content {
+    width: 100%;
+    text-align: center;
+  }
+
   .hero-buttons a, .hero-buttons button {
     flex-shrink: 0;
   }
@@ -1662,6 +1667,10 @@ html {
   /* ABOUT */
   .about {
     padding-top: 70px;
+  }
+
+  .about p {
+    margin-bottom: 0;
   }
 
   .about-card {
@@ -1722,6 +1731,7 @@ html {
 
   .section-title p {
     font-size: .85rem;
+    margin-bottom: 0;
   }
 
   .skill-card {
@@ -1748,11 +1758,13 @@ html {
 
   .projects-intro {
     font-size: .8rem;
-    margin-bottom: 35px;
+    margin-bottom: 5px;
+    margin-top: 0;
   }
 
   .project-card {
     width: 100%;
+    margin-top: 0;
   }
 
   .project-content {
